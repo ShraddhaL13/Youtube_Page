@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Vedio Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+    /* video background */
+    #background-video {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+  </video>
+
+  <div class="container m-3 text-center">
+
+    <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input class="form-control  w-50 " type="text" placeholder="Type here for Search" aria-label="Search"
+        id="textSearch">
+      <button class="btn m-3 btn-danger" id="btnSearch">Search</button>
+    </form>
+
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="container ">
+
+      <div class="row" id="VedioROW">
+        <!--
+          <div class="col-sm-6 " >
+          <iframe class="p-2" width="560" height="315" src="https://www.youtube.com/embed/54Oqg907a50" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6 ">
+          <iframe class="p-3" width="560" height="315" src="https://www.youtube.com/embed/54Oqg907a50" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="col-sm-6 ">
+          <iframe class="p-2" width="560" height="315" src="https://www.youtube.com/embed/54Oqg907a50" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+
+        -->
+        
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
